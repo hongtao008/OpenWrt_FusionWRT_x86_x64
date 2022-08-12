@@ -28,7 +28,6 @@ env:
 jobs:
   Build:
     runs-on: self-hosted
-    if: github.repository == 'DHDAXCW/FusionWRT_x86_x64'
     outputs:
       OPENWRTROOT: ${{ steps.update.outputs.OPENWRTROOT }}
       PLATFORM: ${{ steps.compile.outputs.PLATFORM }}
@@ -137,7 +136,6 @@ jobs:
         rm -rf bin/targets/x86/64/openwrt-x86-64-generic-kernel.bin
         rm -rf bin/targets/x86/64/openwrt-x86-64-generic-rootfs.tar.gz
         rm -rf bin/targets/x86/64/openwrt-x86-64-generic-squashfs-combined-efi.vmdk
-        rm -rf bin/targets/x86/64/openwrt-x86-64-generic-squashfs-rootfs.img.gz
         rm -rf bin/targets/x86/64/openwrt-x86-64-generic.manifest
         make checksum
         echo "::set-output name=GENERATE_STATUS::success"

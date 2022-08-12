@@ -60,6 +60,9 @@ git clone --depth=1 https://github.com/lisaac/luci-lib-docker
 # Add luci-app-poweroff
 git clone --depth=1 https://github.com/esirplayground/luci-app-poweroff
 
+# alist
+git clone https://github.com/sbwml/openwrt-alist --depth=1
+
 # Add luci-theme-argon
 git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon
 git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config
@@ -69,6 +72,9 @@ cp -f $GITHUB_WORKSPACE/data/bg1.jpg luci-theme-argon/htdocs/luci-static/argon/i
 
 # Add subconverter
 git clone --depth=1 https://github.com/tindy2013/openwrt-subconverter
+
+# alist
+git clone https://github.com/sbwml/openwrt-alist --depth=1
 
 # Add luci-app-smartdns & smartdns
 svn co https://github.com/281677160/openwrt-package/trunk/luci-app-smartdns
